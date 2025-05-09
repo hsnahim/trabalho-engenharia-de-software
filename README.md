@@ -59,3 +59,7 @@ para rodar o back-end execute o seguinte codigo:
 mvn clean install
 mvn spring-boot:run
 ```
+
+## 4 Executar o front-end
+Para rodar o front-end, use a extensão Live Share no arquivo index.html
+```

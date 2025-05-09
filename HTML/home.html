@@ -1,26 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
 <body>
-  <div class="screen">
-    <h2>Home</h2>
-    <h1>Order delicious pizza now!</h1>
-    <h3>Check out some of our menu options!</h3>
-    <div class="explore">
-      <button>Margarita</button>
-      <button>Cheeseburguer</button>
-      <button>Pepperoni</button>
-      <button>Vegetarian</button>
-      <button>Spaghetti</button>
-      <button>Boiled Vegetables</button>
-    </div>
-    <button class="BotaoHome" onclick="navigateToLocal('form.html')"><strong> Add Item</strong></button>
+   <link rel="stylesheet" href="../styles.css">
+  <div class="screen home-screen">
+    <h2 class="home-header">Home</h2>
+    <h1 class="home-title">Peça a sua pizza agora!</h1>
+    <h3 class="home-subtitle">Saboreie as diversas opções de nosso cardápio!</h3>
+    
+   <div class="menu-grid">
+  <button class="menu-item" data-selected="false">
+    <span class="food-emoji">🍕</span>
+    <span class="food-name">Margerita</span>
+  </button>
+  
+  <button class="menu-item" data-selected="false">
+    <span class="food-emoji">🧀</span>
+    <span class="food-name">Quatro Queijos</span>
+  </button>
+  
+  <button class="menu-item" data-selected="false">
+    <span class="food-emoji">🌶️</span>
+    <span class="food-name">Pepperoni</span>
+  </button>
+  
+  <button class="menu-item" data-selected="false">
+    <span class="food-emoji">🥗</span>
+    <span class="food-name">Vegetariana</span>
+  </button>
+</div>
+    
+    <button class="add-item-btn" onclick="window.location.href = 'form.html';">
+      <strong>Fazer Pedido</strong>
+    </button>
   </div>
-  <script src="../script.js"></script>
 </body>
-</html>

@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seu pedido será entregue! Por favor, nos avalie!</title>
-  <link rel="stylesheet" href="../styles.css">
+  <title>Review</title>
+  <link rel="stylesheet" href="../styles.css"> 
 </head>
 <body>
-  <div class="screen">
-    <h2>Add a Review</h2>
-    <h1>PizzaExpress</h1>
-    <p>Pizza Lover</p>
-    <textarea placeholder="Share your feedback here"></textarea>
-    <div class="rating">
-  <span class="star" data-value="1">★</span>
-  <span class="star" data-value="2">★</span>
-  <span class="star" data-value="3">★</span>
-  <span class="star" data-value="4">★</span>
-  <span class="star" data-value="5">★</span>
-</div>
-<input type="hidden" id="ratingValue" name="rating" value="0" />
-    <button onclick="navigateToLocal('home.html')">Submit</button>
+  <div class="screen review-screen">
+    <div class="review-header">
+      <h2>Seu pedido será entregue! Por favor, nos avalie!</h2>
+      <h1>PizzaExpress</h1>
+      <p>Pizza Lover</p>
+    </div>
+
+    <div class="review-content">
+      <textarea class="review-textarea" placeholder="Coloque seu feedback aqui"></textarea>
+      
+      <div class="rating-stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+      <input type="hidden" id="ratingValue" name="rating" value="0">
+      
+      <button class="submit-btn" onclick="navigateToLocal('home.html')">Finalizar avaliação</button>
+    </div>
   </div>
+
+
   <script src="../script.js"></script>
 </body>
 </html>

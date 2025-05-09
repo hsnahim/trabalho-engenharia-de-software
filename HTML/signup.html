@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
 <body>
-  <div class="screen">
-    <h2>Signup</h2>
-    <img src="../Imagens/Img_ESII_2.png" alt="Signup Icon" class="icon">
-    <h1>PizzaExpress!</h1>
-    <p>Join us for exclusive offers</p>
-    <input type="email" placeholder="Enter your email">
-    <input type="password" placeholder="Enter your password">
-    <button onclick="navigateToLocal('home.html')">Join now</button>
+  <div class="screen signup-screen">
+    <div class="logo-container">
+      <img src="../Imagens/Img_ESII_2.png" alt="Pizza Logo" class="logo-icon">
+      <link rel="stylesheet" href="../styles.css">
+      <h1 class="logo-text">PizzaExpress!</h1>
+      <p class="tagline">Crie uma conta e faça seu primeiro pedido!</p>
+    </div>
+    
+    <form class="signup-form">
+      <div class="input-group">
+        <input type="email" placeholder="Email" required>
+        <span class="input-icon">✉️</span>
+      </div>
+      
+      <div class="input-group">
+        <input type="password" placeholder="Senha" required>
+        <span class="input-icon">🔒</span>
+      </div>
+      
+     <button class="signup-btn" type="button" onclick="window.location.href = 'home.html';">
+        <span>Entrar agora!</span>
+        <span class="arrow">→</span>
+      </button>
+    </form>
+    
+    <p class="login-link">Já tem uma conta? <a href="#">Log in</a></p>
   </div>
-  <script src="../script.js"></script>
 </body>
-</html>

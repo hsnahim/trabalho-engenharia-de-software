@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Map - PizzaExpress</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <script src="../script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <h2>Map</h2>
-      <div class="map-container">
-        <div class="search-bar">
-          <button>🔍</button>
-          <input type="text" placeholder="Enter delivery address" />
+<body>
+   <link rel="stylesheet" href="../styles.css">
+  <div class="screen map-screen">
+    <div class="map-card">
+      <h2 class="map-title">Rastreie seu pedido</h2>
+      
+      <div class="map-search-container">
+        <div class="map-search-bar">
+          <span class="search-icon">📍</span>
+          <input type="text" class="map-search-input" placeholder="Coloque seu endereço">
         </div>
-
-        <div class="map-image">
-          <img src="../Imagens/Img_ESII_3.png" alt="Map" />
-        </div>
-        <p>12 delivery locations available</p>
-        <button onclick="navigateToLocal('review.html')" class="back-button">
-          Confirmar Pedido
-        </button>
       </div>
+
+      <div class="map-wrapper">
+        <img src="../Imagens/Img_ESII_3.png" alt="Delivery Map" class="map-image">
+        <div class="map-overlay"></div>
+      </div>
+
+      <p class="delivery-info">
+        <span class="highlight">12 locais de entrega</span> disponíveis em sua área
+      </p>
+
+      <button class="confirm-order-btn" onclick="window.location.href = 'review.html';">
+        <span>Finalizar Pedido</span>
+        <span class="pizza-icon">🍕</span>
+      </button>
     </div>
-  </body>
-</html>
+  </div>
+</body>

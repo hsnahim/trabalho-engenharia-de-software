@@ -1,29 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Form</title>
-  <link rel="stylesheet" href="../styles.css">
-</head>
 <body>
-  <div class="screen">
-    <h2>Order Form</h2>
-    <form class="FormDetalhes">
-      <h3>Step 1: Register</h3>
-      <input type="text" placeholder="Email">
-      <input type="text" placeholder="Password">
-      <h3>Step 2: Pizza Size</h3>
-      <select>
-        <option>Choose size</option>
-        <option>Small</option>
-        <option>Medium</option>
-      </select>
-      <h3>Step 3: Drink selection</h3>
-      <input type="text" placeholder="Add a drink">
+
+  <div class="screen order-form-screen">
+    <h2 class="form-title">Faça seu pedido</h2>
+      <link rel="stylesheet" href="../styles.css">
+    <form class="pizza-order-form">
+      <div class="form-step">
+        <h3 class="step-title"><span class="step-number">1</span>Confirme sua conta</h3>
+        <input type="email" class="form-input" placeholder="Email" required>
+        <input type="password" class="form-input" placeholder="Senha" required>
+      </div>
+
+      <div class="form-step">
+        <h3 class="step-title"><span class="step-number">2</span>Tamanho da pizza</h3>
+        <select class="form-select">
+          <option>Tamanhos</option>
+          <option>Pequena (25cm)</option>
+          <option>Médio (30cm)</option>
+          <option>Grande (35cm)</option>
+        </select>
+      </div>
+
+      <div class="form-step">
+        <h3 class="step-title"><span class="step-number">3</span>Drinks & Acompanhamentos</h3>
+        <input type="text" class="form-input" placeholder="Add drinks (optional)">
+        <div class="extras-grid">
+          <button type="button" class="extra-option">Pão de Alho</button>
+          <button type="button" class="extra-option">Sachês de Molhos</button>
+          <button type="button" class="extra-option">Sobremesa: Pudim de chocolate</button>
+        </div>
+      </div>
+
+      <button type="submit" class="order-now-btn" onclick="window.location.href = 'map.html';">
+        <span>Confirmar Pedido</span>
+        <span class="btn-arrow">→</span>
+      </button>
     </form>
-    <button onclick="navigateToLocal('map.html')">Order now</button>
   </div>
-  <script src="../script.js"></script>
 </body>
-</html>
