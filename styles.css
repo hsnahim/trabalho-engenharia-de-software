@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff7f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.screen {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.main-img, .icon {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.badge {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.explore button {
+  margin: 5px;
+}
+
+.photos img {
+  width: 60px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.rating {
+  font-size: 24px;
+  color: #ffa500;
+  margin: 10px 0;
+}
+
+a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.delivery-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.option {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form h3 {
+  margin-top: 20px;
+}
+
+.BotaoHome{
+ background-color: lightblue; 
+ border-radius: 10px;
+ color: black;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.search-bar button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 40px;
+  width: 70%;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ccc;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.rating .star:hover,
+.rating .star.hovered,
+.rating .star.selected {
+  color: #ffa500;
+}
